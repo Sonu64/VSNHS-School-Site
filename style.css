@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+nav {
+	display: flex;
+	width: 100%;
+	background: #00007D;
+	justify-content: space-around;
+	height: 70px;
+	align-items: center;
+	box-shadow: 0px 0px 20px 3px white;
+	z-index: 1;
+	position: fixed;
+	top: 0px;
+}
+nav ul{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	line-height: 70px;
+	list-style-type: none;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 0px 25px;
+	font-weight: 600;
+	transition: 0.4s ease;
+}
+nav ul li a:hover{
+	background: #FFFFFF;
+	color: #00007D;
+}
+nav ul li.active a{
+	background: rgba(0,0,0,0.6);
+	color: #FFFFFF;
+}
+.close-btn{
+	display: none;
+}
+.banner{
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('Capture.JPG');
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	margin-top: 70px;
+	box-shadow: top 0px 0px 10px 5px cyan;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero{
+	color: white;
+	font-size: 4rem;
+	font-weight: 120;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.btn{
+	text-decoration: none;
+	color: white;
+	font-family: "Product Sans", sans-serif;
+	padding: 20px 20px;
+	border: 2px solid white;
+	word-spacing: 3px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	color: black;
+	background: white;
+}
+.mobile-part{
+	display: none;
+}
+.logo img, .mobile-logo img{
+	height: 58px;
+	border-radius: 50%;
+}
+@media only screen and (max-width: 850px) {
+	nav{
+		flex-direction: column;
+		height: 100%;
+		position: fixed;
+		justify-content: center;
+		/*display: none;*/
+		margin-left: -1000px;
+		transition: 0.4s ease;
+	}
+	nav.active{
+		margin-left: 0px;
+	}
+	.logo{
+		margin-bottom: 20px;
+	}
+	nav ul{
+		flex-direction: column;
+		width: 100%;
+		line-height: 55px;
+	}
+	nav ul li a{
+		font-size: 0.8rem;
+		display: block;
+		text-align: center;
+	}
+	.close-btn{
+		display: block;
+		margin-top: 20px;
+		font-size: 1.2rem;
+		color: white;
+		cursor: pointer;
+	}
+	.banner{
+		margin-top: 0px;
+	}
+	.mobile-part{
+		display: flex;
+		background: #00007D;
+		width: 100%;
+		position: relative;
+		bottom: 44px;
+		height: 70px;
+		align-items: center;
+	}
+	.mobile-logo{
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		align-items: center;
+	}
+	.toggle-btn{
+		width: 10%;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		background: rgba(0,0,0,0.3);
+		padding: 0px;
+		color: white;
+		height: 100%;
+		align-items: center;
+		font-size: 1.2rem;
+	}
+	.hero{
+		font-size: 2.3rem;
+	}
+	.btn{
+		font-size: 0.8rem;
+	}
+}
+
