@@ -105,7 +105,7 @@ nav ul li.active a{
 		line-height: 55px;
 	}
 	nav ul li a{
-		font-size: 0.8rem;
+		font-size: 1rem;
 		display: block;
 		text-align: center;
 	}
@@ -123,8 +123,9 @@ nav ul li.active a{
 		display: flex;
 		background: #00007D;
 		width: 100%;
-		position: relative;
-		bottom: 44px;
+		position: fixed;
+		top: 0;
+
 		height: 70px;
 		align-items: center;
 	}
