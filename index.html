@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">   
-	<title>VSNHS : Another word for <3</title>
-	<script src="https://kit.fontawesome.com/efca709025.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<nav>
-		<div class="logo">
-			<img src="logo.jpg" alt="LOGO"/>
-		</div>
-		<ul>
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Academics</a></li>
-			<li><a href="#">Students</a></li>
-			<li><a href="#">Teachers</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-		<div class="close-btn">
-			<p>
-				<i class="fas fa-chevron-left"></i>
-			</p>
-		</div>
-	</nav>
-	<main>
-		<div class="banner">
-
-		<div class="mobile-part">
-			<div class="toggle-btn">
-				<p>
-					<i class="fas fa-bars"></i>
-				</p>
-			</div>
-			<div class="mobile-logo">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+		<title>VSNHS : Another word for <3</title>
+		<script src="https://kit.fontawesome.com/efca709025.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
 				<img src="logo.jpg" alt="LOGO"/>
 			</div>
-		</div>
-
-		
-			<h1 class="hero">Welcome to V.S.N.H.S</h1>
-			<a href="#" class="btn">Get a Campus Tour</a>
-		</div>
-	</main>
-</body>
-<script src="jquery-3.4.0.min.js"></script>
-<script>
-$(document).ready(function(){
-		$(".toggle-btn").on("click", function(){
-				$("nav").addClass("active");
-		});
-		$(".close-btn").on("click", function(){
-				$("nav").removeClass("active");
-		});
-})
-</script>
+			<ul>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Academics</a></li>
+				<li><a href="#">Students</a></li>
+				<li><a href="#">Teachers</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="close-btn">
+				<p>
+					<i class="fas fa-chevron-left"></i>
+				</p>
+			</div>
+		</nav>
+		<main>
+			<div class="banner">
+				<div class="mobile-part">
+					<div class="toggle-btn">
+						<p>
+							<i class="fas fa-bars"></i>
+						</p>
+					</div>
+					<div class="mobile-logo">
+						<img src="logo.jpg" alt="LOGO"/>
+					</div>
+				</div>
+				<h1 class="hero">Welcome to V.S.N.H.S</h1>
+				<a href="#" class="btn">Get a Campus Tour</a>
+			</div>
+			<div class="video-part">
+				<iframe src="https://www.youtube.com/embed/RoUMR1CT0JM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+				<div class="video-part-captions">
+					<h1>Some moments, that we can never Forget !</h1>
+					<p>
+						Some moments that has made our V.S.N.H.S a reason to take pride ! This video is published by Mr. Partha Sarathy Chakroborty, who is an experienced teacher of Chemistry of our School. We really take pride in the "Art" and the "Artist" of this video.
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="jquery-3.4.0.min.js"></script>
+	<script>
+	$(document).ready(function(){
+			$(".toggle-btn").on("click", function(){
+					$("nav").addClass("active");
+			});
+			$(".close-btn").on("click", function(){
+					$("nav").removeClass("active");
+			});
+	})
+	</script>
 </html>
